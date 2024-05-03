@@ -64,7 +64,7 @@ public class Principal {
         DatosResultados busqueda = convertidora.convertidor(json, DatosResultados.class);
         Optional<DatosLibro> libroBuscado = Optional.of(busqueda.libros().stream().findFirst().get());
         libroBuscado.ifPresent(t -> System.out.println("Libro Encontrado\n"+ t));
-
+        libroBuscado.orElse(null);
         DoubleSummaryStatistics est = libros.stream()
                 .collect(Collectors.summarizingDouble(DatosLibro::descargas));
 
