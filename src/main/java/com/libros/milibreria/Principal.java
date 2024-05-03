@@ -1,18 +1,13 @@
 package com.libros.milibreria;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.DoubleSummaryStatistics;
-import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.libros.model.Autor;
 import com.libros.model.DatosLibro;
 import com.libros.model.DatosResultados;
-import com.libros.model.Libro;
 import com.libros.services.ConsumoAPI;
 import com.libros.services.ConvierteDatos;
 
